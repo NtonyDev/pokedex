@@ -1,5 +1,5 @@
 let offset=0;
-let APIUrl  = `https:pokeapi.co/api/v2/pokemon/?limit=9&offset=${offset}`;
+let APIUrl  = `https://pokeapi.co/api/v2/pokemon/?limit=9&offset=${offset}`;
 let nPokemon = 0;
 let arrayPokemon = [];
 
@@ -75,7 +75,7 @@ getData();
 console.log(pokedex);
 btnAvanti.addEventListener("click", function() {
     offset+=9;
-    APIUrl  = `https:pokeapi.co/api/v2/pokemon/?limit=9&offset=${offset}`;
+    APIUrl  = `https://pokeapi.co/api/v2/pokemon/?limit=9&offset=${offset}`;
     console.log("offset:",offset);
     pokedex.innerHTML = "";
     getData();
@@ -86,7 +86,7 @@ btnIndietro.addEventListener("click", function() {
     if (offset<0) {
         offset=0;
     };
-    APIUrl  = `https:pokeapi.co/api/v2/pokemon/?limit=9&offset=${offset}`;
+    APIUrl  = `https://pokeapi.co/api/v2/pokemon/?limit=9&offset=${offset}`;
     console.log("offset:",offset);
     pokedex.innerHTML = "";
     getData();
